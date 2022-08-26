@@ -91,7 +91,7 @@ const FormSection = () => {
                   type="checkbox"
                   onChange={() => setRememberMe((state) => !state)}
                 />
-                <label htmlFor="checkbox"> Запомнить меня</label>
+                <label htmlFor="checkbox">Запомнить меня</label>
               </Row>
 
               <Button accent disabled={isLoading}>
