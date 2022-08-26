@@ -2,21 +2,21 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   id: "light",
-  bgColor: "#E5E5E5",
+  bgColor: "#FFFFFF",
   black: "#000000",
   white: "#FFFFFF",
   primary: "#57617B",
   grey: "#2A2E37",
   grey2: "#3A3C40",
   greyHover: "#82868C",
-  lightGrey: "#BABFC5",
+  lightGrey: "#E5E5E5",
   lightGrey2: "#CFCFCF",
   lightGrey3: "#EEEEEE",
   graphit: "#303030",
-  textBlack: "#141414",
-  textDarkGrey: "#7C7C7C",
+  textBlack: "#1F1F1F",
+  textDarkGrey: "#232323",
   link: "#39569A",
-  red: "#FB2C2C",
+  red: "#E26F6F",
   lightGreyHover: "#E3E6EB",
   logo: "#ADB4C2",
   logoHover: "#858993",
@@ -32,6 +32,9 @@ const theme: DefaultTheme = {
   tooltip: "#E0E0E0",
   tooltipTitle: "#828282",
   dropdownItem: "#2A2E37",
+  blue: "#4a67ff",
+  blueHover: "#1940ff",
+  blueDisable: "#99A9FF",
 };
 
 export default theme;
