@@ -8,7 +8,10 @@ import { Button } from "../../Button";
 import errorImg from "./../../../assets/error.svg";
 import { FormSectionStyles } from "./styles";
 import { RegisterSchema } from "./config";
+import { CommonUseComponents } from "../../../../styles/CommonUseComponents";
+import Text from "../../Text";
 
+const { Row } = CommonUseComponents;
 const { Container, StyledForm, ErrorBlock } = FormSectionStyles;
 
 const FormSection = () => {
@@ -82,10 +85,14 @@ const FormSection = () => {
                 isError={errors.password && touched.password}
                 error={errors.password}
               />
-              <input
-                type="checkbox"
-                onChange={() => setRememberMe((state) => !state)}
-              />
+              <Row gap="15px" flexStart>
+                <input
+                  id="checkbox"
+                  type="checkbox"
+                  onChange={() => setRememberMe((state) => !state)}
+                />
+                <label htmlFor="checkbox"> Запомнить меня</label>
+              </Row>
 
               <Button accent disabled={isLoading}>
                 Войти
